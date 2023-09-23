@@ -7,6 +7,7 @@ formNuevo.addEventListener('submit', async (e) => {
 
     const data = {
         titulo: document.querySelector('#titulo').value,
+        autor: document.querySelector('#autor').value,
         detalle: document.querySelector('#detalle').value,
         url_imagen: document.querySelector('#url_imagen').value,
         fecha: document.querySelector('#fecha').value,

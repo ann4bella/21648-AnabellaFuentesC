@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-09-2023 a las 03:31:44
+-- Tiempo de generación: 24-09-2023 a las 00:27:35
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `publicaciones` (
   `id` int(11) NOT NULL,
+  `autor` varchar(255) NOT NULL,
   `titulo` varchar(255) NOT NULL,
   `detalle` text NOT NULL,
   `url_imagen` varchar(255) NOT NULL,
@@ -39,11 +40,11 @@ CREATE TABLE `publicaciones` (
 -- Volcado de datos para la tabla `publicaciones`
 --
 
-INSERT INTO `publicaciones` (`id`, `titulo`, `detalle`, `url_imagen`, `fecha`) VALUES
-(1, 'CALATHEA ORNATA SANDERIANA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/calathea-ornata-sanderiana-1.png', '2023-09-13'),
-(2, 'ALOCASIA AMAZONICA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/ALOCASIA-1.png', '2023-09-13'),
-(3, 'ALOCASIA ODORA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/oreja-elefante-1.png', '2023-09-13'),
-(4, 'MONSTERA DELICIOSA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/monstera-deliciosa-1.png', '2023-09-13');
+INSERT INTO `publicaciones` (`id`, `autor`, `titulo`, `detalle`, `url_imagen`, `fecha`) VALUES
+(1, 'Brian Ornata', 'CALATHEA ORNATA SANDERIANA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/calathea-ornata-sanderiana-1.png', '2023-09-13'),
+(2, 'Pedro Amazónica', 'ALOCASIA AMAZONICA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/ALOCASIA-1.png', '2023-09-13'),
+(3, 'Laura Odora', 'ALOCASIA ODORA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/oreja-elefante-1.png', '2023-09-13'),
+(4, 'Lucas Deliciosa', 'MONSTERA DELICIOSA', '\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"', 'https://tuki-socks.com.ar/wp-content/uploads/2023/09/monstera-deliciosa-1.png', '2023-09-13');
 
 --
 -- Índices para tablas volcadas
@@ -63,7 +64,7 @@ ALTER TABLE `publicaciones`
 -- AUTO_INCREMENT de la tabla `publicaciones`
 --
 ALTER TABLE `publicaciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
