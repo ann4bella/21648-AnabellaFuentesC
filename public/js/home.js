@@ -6,7 +6,6 @@ const mostrarPublicaciones = (publicaciones, elementoHtml) => {
         `<div class="col">
         <div class="card">
             <img src="${pub.url_imagen}" class="card-img-top" alt="${pub.titulo}">
-            
             <div class="card-body">
             <h4>${pub.titulo}</h4>
             <p class="autoria">
